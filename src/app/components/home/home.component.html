@@ -1,0 +1,75 @@
+<h1>Seja bem vindo ao marketplace de Eletrônicos!</h1>
+<div class="card max-w-screen">
+  <p-carousel
+    [value]="eletronics"
+    [numVisible]="3"
+    [numScroll]="3"
+    [circular]="false"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template let-eletronic pTemplate="item" let-rowIndex="rowIndex">
+      <div class="border-1 surface-border border-round m-2 text-center py-5 px-3" style="background-color: white">
+        <div class="mb-3">
+          <img src="{{ eletronic.image }}" [alt]="eletronic.name" class="w-6 shadow-2" />
+        </div>
+        <div>
+          <h4 class="mb-1">{{ eletronic.name }}</h4>
+          <h6 class="mt-0 mb-3">{{ '$' + eletronic.price }}</h6>
+          <div>
+            <a style="font-weight: bold">Estoque: </a>
+            <p-tag [value]="eletronic.amount" [severity]="getSeverity(eletronic.amount)"></p-tag>
+          </div>
+          <div class="card flex justify-content-center">
+            <!-- <p-inputNumber
+              [(ngModel)]="eletronic.quantity"
+              [style]="{ width: '3rem' }"
+              [showButtons]="true"
+              buttonLayout="vertical"
+              spinnerMode="vertical"
+              inputId="vertical"
+              decrementButtonClass="p-button-secondary"
+              incrementButtonClass="p-button-secondary"
+              incrementButtonIcon="pi pi-plus"
+              decrementButtonIcon="pi pi-minus"
+            ></p-inputNumber> -->
+            <p-inputNumber
+              [(ngModel)]="eletronic.quantity"
+              styleClass="mt-3"
+              [showButtons]="true"
+              buttonLayout="horizontal"
+              inputId="horizontal"
+              spinnerMode="horizontal"
+              [step]="1"
+              decrementButtonClass="p-button-danger"
+              incrementButtonClass="p-button-success"
+              incrementButtonIcon="pi pi-plus"
+              decrementButtonIcon="pi pi-minus"
+            ></p-inputNumber>
+          </div>
+          <div class="car-buttons mt-5">
+            <p-button
+              type="button"
+              styleClass="p-button p-button-rounded mr-2"
+              icon="pi pi-shopping-cart"
+              (click)="addCart(eletronic)"
+            ></p-button>
+            <p-button
+              *ngIf="alreadyOnFavorite"
+              type="button"
+              styleClass="p-button-warning p-button-rounded mr-2"
+              icon="pi pi-star-fill"
+              (click)="addFavorites(eletronic)"
+            ></p-button>
+            <p-button
+              *ngIf="!alreadyOnFavorite"
+              type="button"
+              styleClass="p-button-danger p-button-rounded mr-2"
+              icon="pi pi-heart-fill"
+              (click)="addFavorites(eletronic)"
+            ></p-button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

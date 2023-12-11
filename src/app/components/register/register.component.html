@@ -1,0 +1,79 @@
+<h1>Marketplace de Eletrônicos</h1>
+<form [formGroup]="registerForm">
+    <p-card header="Registrar-se" [style]="{ 
+        border: '2px solid black',  
+        borderRadius: '15px',  
+        width: '450px',   
+        color: 'black' 
+    }" class="login-card">
+        <div class="field">
+            <label class="block" for="firstName">Primeiro Nome</label>
+            <input type="text" pInputText formControlName="firstName" class="w-full" name="firstName" placeholder="Digite seu primeiro Nome">
+            <small class="p-error block" *ngIf="firstName.invalid && firstName.dirty">Field is Required</small>
+        </div>
+        <div class="field">
+            <label class="block" for="secondName">Segundo Nome</label>
+            <input type="text" pInputText formControlName="secondName" class="w-full" name="secondName" placeholder="Digite seu Segundo Nome">
+            <small class="p-error block" *ngIf="secondName.invalid && secondName.dirty">Field is Required</small>
+        </div>
+    <div class="field">
+        <label for="email">Email</label>
+        <input type="text" pInputText formControlName="email" class="w-full" name="email" placeholder="Digite seu Email">
+        <small *ngIf="email.invalid && (email.dirty || email.touched)" class="block p-error">
+            <div *ngIf="email.errors?.['required']">Email é necessário</div>
+            <div *ngIf="email.errors?.['email']">Email deve ser válido</div>
+        </small>
+    </div>
+    <div class="field">
+        <label for="password">Senha</label>
+        <br>
+        <p-password formControlName="password" [toggleMask]="true" class="w-full" placeholder="Digite sua senha">
+            <ng-template pTemplate="header">
+                <h6>Escolha uma senha</h6>
+            </ng-template>
+            <ng-template pTemplate="footer">
+                <p-divider></p-divider>
+                <p class="mt-2">A senha deve conter</p>
+                <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
+                    <li>Uma letra minúscula</li>
+                    <li>Uma letra maiúscula</li>
+                    <li>Um número</li>
+                    <li>Um caractere especial</li>
+                    <li>Mínimo de 8 characters</li>
+                </ul>
+            </ng-template>
+        </p-password>
+    </div>
+    <div class="field">
+        <label for="confirmPassword">Confirmar Senha</label>
+        <input
+        type="password"
+        pInputText
+        formControlName="confirmPassword"
+        class="w-full"
+        name="confirmPassword"
+        placeholder="Confirme a Senha">
+        <small *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)" class="block p-error">
+            <div *ngIf="confirmPassword.errors?.['required']">É necessário confirmar a senha</div>
+        </small>
+        <small class="block p-error" *ngIf="registerForm.errors?.['passwordMisMatch'] && confirmPassword.valid && password.valid">
+            As senhas devem ser iguais
+        </small>
+    </div>
+    <div class="field-row">
+        <div class="field">
+            <label class="block" for="date">Data de nascimento  </label>
+            <input type="date" pInputText formControlName="date"/>
+            <!-- <small class="p-error block" *ngIf="eletronicForm.controls['price'].invalid && eletronicForm.controls['price'].dirty">Field is Required</small> -->
+        </div>
+        <div class="field">
+            <label class="block">Admin</label>
+            <p-checkbox formControlName="admin" value=true inputId="admin"></p-checkbox>
+        </div>
+    </div>
+    <p-button label="Registrar" styleClass="w-full" [disabled]="registerForm.invalid" (click)="registerUser()"></p-button>
+    <div class="mt-2">
+        Já tem cadastro? <a routerLink="/login">Login</a>
+    </div>
+</p-card>
+</form>

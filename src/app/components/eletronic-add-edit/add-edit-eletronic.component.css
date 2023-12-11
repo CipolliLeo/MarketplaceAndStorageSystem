@@ -1,0 +1,13 @@
+:host >>> .eletronic-form .p-component {
+    width: 100%;
+}
+
+.field-row{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.field-row label{
+    margin-right: 10px;
+}

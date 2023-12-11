@@ -1,0 +1,10 @@
+<div class="card" *ngIf="userLogged">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+        </ng-template>
+        <ng-template pTemplate="end">
+            <p-button label="Sign out" (onClick)="logout()"></p-button>
+        </ng-template>
+    </p-menubar>
+</div>

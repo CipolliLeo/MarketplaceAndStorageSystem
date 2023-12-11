@@ -1,0 +1,897 @@
+{
+  "eletronics": [
+    {
+      "name": "Smart TV",
+      "description": "60 polegadas, 4k",
+      "brand": "Samsung",
+      "price": 1000,
+      "amount": 20,
+      "id": 1,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "Iphone 15",
+      "description": "128GB",
+      "brand": "Apple",
+      "price": 1200,
+      "amount": 101,
+      "id": 2,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "AirPods",
+      "description": "Headphones",
+      "brand": "Apple",
+      "price": 200,
+      "amount": 10,
+      "id": 4,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "Smartwatch",
+      "description": "Smartwatch 44mm, LTE, bateria dura 2 dias de uso intenso",
+      "brand": "Samsung",
+      "price": 500,
+      "amount": 10,
+      "id": 7,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "PC Gamer",
+      "description": "I7-7700k, RTX 3060, 16GB Ram, 1TB SSD, Water Cooler 240mm, Gabinete x, setup completo",
+      "brand": "Sem Marca",
+      "price": 10000,
+      "amount": 5,
+      "id": 8,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "Smart TV",
+      "description": "60 polegadas, 4k",
+      "brand": "Samsung",
+      "price": 1000,
+      "amount": 21,
+      "id": 9,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "Smart TV",
+      "description": "60 polegadas, 4k",
+      "brand": "Samsung",
+      "price": 1000,
+      "amount": 21,
+      "id": 10,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "Smartwatch",
+      "description": "Smartwatch 44mm, LTE, bateria dura 2 dias de uso intenso",
+      "brand": "Samsung",
+      "price": 500,
+      "amount": 16,
+      "id": 11,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "Smart TV",
+      "description": "60 polegadas, 4k",
+      "brand": "Samsung",
+      "price": 1000,
+      "amount": 21,
+      "id": 12,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "test",
+      "description": "tes",
+      "brand": "test",
+      "price": 100,
+      "amount": 10,
+      "id": 13,
+      "image": "https://picsum.photos/200"
+    },
+    {
+      "name": "Relógio",
+      "description": "SmartWatch",
+      "brand": "Xiaomi",
+      "price": 100,
+      "amount": 100,
+      "image": "https://picsum.photos/200",
+      "id": 15
+    },
+    {
+      "name": "Teclado",
+      "description": null,
+      "brand": "Logitech",
+      "price": 250,
+      "amount": 10,
+      "image": null,
+      "id": 16
+    },
+    {
+      "name": "Mouse",
+      "description": "",
+      "brand": "Razer",
+      "price": 220,
+      "amount": 100,
+      "image": null,
+      "id": 17
+    },
+    {
+      "name": "HeadSet",
+      "description": "",
+      "brand": "HyperX",
+      "price": 400,
+      "amount": 20,
+      "image": "https://picsum.photos/200",
+      "id": 18
+    },
+    {
+      "name": "Monitor",
+      "description": null,
+      "brand": "AOC",
+      "price": 200,
+      "amount": 10,
+      "image": "https://picsum.photos/200",
+      "id": 19
+    },
+    {
+      "name": "Fone",
+      "description": "",
+      "brand": "Samsung",
+      "price": 190,
+      "amount": 10,
+      "image": "https://picsum.photos/200",
+      "id": 20
+    },
+    {
+      "name": "Smart TV LG",
+      "description": "60 Polegadas",
+      "brand": "LG",
+      "price": 1000,
+      "amount": 100,
+      "image": "https://picsum.photos/200",
+      "id": 21
+    },
+    {
+      "name": "Copo Stanley",
+      "description": "",
+      "brand": "Stanley",
+      "price": 100,
+      "amount": 10,
+      "image": "https://picsum.photos/200",
+      "id": 22
+    }
+  ],
+  "favorites": [
+    {
+      "userEmail": "leocipolli@gmail.com",
+      "idEletronic": 15,
+      "id": 12
+    },
+    {
+      "userEmail": "leocipolli@gmail.com",
+      "idEletronic": 2,
+      "id": 15
+    },
+    {
+      "userEmail": "leocipolli@gmail.com",
+      "idEletronic": 2,
+      "id": 16
+    },
+    {
+      "userEmail": "leocipolli@gmail.com",
+      "idEletronic": 2,
+      "id": 17
+    },
+    {
+      "userEmail": "leocipolli@gmail.com",
+      "idEletronic": 1,
+      "id": 18
+    },
+    {
+      "userEmail": "leocipolli@gmail.com",
+      "idEletronic": 1,
+      "id": 19
+    }
+  ],
+  "cart": [
+    {
+      "emailUser": "leocipolli@gmail.com",
+      "idEletronic": 15,
+      "amount": 1,
+      "id": 1,
+      "eletronic": {
+        "name": "Relógio",
+        "description": "SmartWatch",
+        "brand": "Xiaomi",
+        "price": 100,
+        "amount": 100,
+        "image": "https://picsum.photos/200",
+        "id": 15
+      }
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "firstName": "Leonardo",
+      "secondName": "Ferrari",
+      "email": "leocipolli@gmail.com",
+      "password": "#Leonardo1202",
+      "dateOfBirth": "2002-08-12",
+      "admin": true
+    },
+    {
+      "firstName": "Conta Teste",
+      "secondName": "",
+      "email": "teste@gmail.com",
+      "password": "#Teste123",
+      "date": "2023-11-01",
+      "admin": false,
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "address": {
+        "endereco": "Rua Santa Clara",
+        "complemento": "Apto 12",
+        "bairro": "Santa Rita",
+        "cidade": "Guaratinguetá",
+        "estado": "SP",
+        "pais": "Brasil"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo Ferrari",
+        "cardValid": "12/2025",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 2,
+        "id": 2,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 1
+    },
+    {
+      "address": {
+        "endereco": "Rua Santa Clara",
+        "complemento": "Apto 12",
+        "bairro": "Santa Rita",
+        "cidade": "Guaratinguetá",
+        "estado": "SP",
+        "pais": "Brasil"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo Ferrari",
+        "cardValid": "12/2025",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 4,
+        "amount": 1,
+        "id": 4,
+        "eletronic": {
+          "name": "AirPods",
+          "description": "Headphones",
+          "brand": "Apple",
+          "price": 200,
+          "amount": 10,
+          "id": 4,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 2
+    },
+    {
+      "address": {
+        "endereco": "Rua Santa Clara",
+        "complemento": "Apto 12",
+        "bairro": "Santa Rita",
+        "cidade": "Guaratinguetá",
+        "estado": "SP",
+        "pais": "Brasil"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo Ferrari",
+        "cardValid": "12/2025",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 1,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 3
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo Ferrari",
+        "cardValid": "12/2025",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 2,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 4
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo Ferrari",
+        "cardValid": "12/2025",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 4,
+        "amount": 1,
+        "id": 4,
+        "eletronic": {
+          "name": "AirPods",
+          "description": "Headphones",
+          "brand": "Apple",
+          "price": 200,
+          "amount": 10,
+          "id": 4,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 5
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo Ferrari",
+        "cardValid": "12/2025",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 6
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo Ferrari",
+        "cardValid": "12/2025",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 7
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 2,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 8
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 4,
+        "amount": 1,
+        "id": 4,
+        "eletronic": {
+          "name": "AirPods",
+          "description": "Headphones",
+          "brand": "Apple",
+          "price": 200,
+          "amount": 10,
+          "id": 4,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 9
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 10
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 11
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 2,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 12
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 4,
+        "amount": 1,
+        "id": 4,
+        "eletronic": {
+          "name": "AirPods",
+          "description": "Headphones",
+          "brand": "Apple",
+          "price": 200,
+          "amount": 10,
+          "id": 4,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 13
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 14
+    },
+    {
+      "address": {
+        "endereco": "wdadawd",
+        "complemento": "wadawd",
+        "bairro": "awdawd",
+        "cidade": "awdwad",
+        "estado": "awdwadwa",
+        "pais": "daw"
+      },
+      "payment": {
+        "cardNumber": "2132-1312-3213-1312",
+        "cardName": "Leonardo",
+        "cardValid": "12/3123",
+        "cardCVV": "213"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 15
+    },
+    {
+      "address": {
+        "endereco": "wdawdawdwa",
+        "complemento": "dwad",
+        "bairro": "wadawd",
+        "cidade": "awdwa",
+        "estado": "dwadwa",
+        "pais": "dwadwa"
+      },
+      "payment": {
+        "cardNumber": "1231-2323-2132-1312",
+        "cardName": "dwadwadwadad",
+        "cardValid": "13/2313",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 2,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 16
+    },
+    {
+      "address": {
+        "endereco": "wdawdawdwa",
+        "complemento": "dwad",
+        "bairro": "wadawd",
+        "cidade": "awdwa",
+        "estado": "dwadwa",
+        "pais": "dwadwa"
+      },
+      "payment": {
+        "cardNumber": "1231-2323-2132-1312",
+        "cardName": "dwadwadwadad",
+        "cardValid": "13/2313",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 4,
+        "amount": 1,
+        "id": 4,
+        "eletronic": {
+          "name": "AirPods",
+          "description": "Headphones",
+          "brand": "Apple",
+          "price": 200,
+          "amount": 10,
+          "id": 4,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 17
+    },
+    {
+      "address": {
+        "endereco": "wdawdawdwa",
+        "complemento": "dwad",
+        "bairro": "wadawd",
+        "cidade": "awdwa",
+        "estado": "dwadwa",
+        "pais": "dwadwa"
+      },
+      "payment": {
+        "cardNumber": "1231-2323-2132-1312",
+        "cardName": "dwadwadwadad",
+        "cardValid": "13/2313",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 18
+    },
+    {
+      "address": {
+        "endereco": "wdawdawdwa",
+        "complemento": "dwad",
+        "bairro": "wadawd",
+        "cidade": "awdwa",
+        "estado": "dwadwa",
+        "pais": "dwadwa"
+      },
+      "payment": {
+        "cardNumber": "1231-2323-2132-1312",
+        "cardName": "dwadwadwadad",
+        "cardValid": "13/2313",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 11,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 19
+    },
+    {
+      "address": {
+        "endereco": "wdawdawdwa",
+        "complemento": "dwad",
+        "bairro": "wadawd",
+        "cidade": "awdwa",
+        "estado": "dwadwa",
+        "pais": "dwadwa"
+      },
+      "payment": {
+        "cardNumber": "1234-5678-9012-3456",
+        "cardName": "Leonardo",
+        "cardValid": "12/2029",
+        "cardCVV": "123"
+      },
+      "date": "Fri Dec 08 2023",
+      "cart": {
+        "emailUser": "leocipolli@gmail.com",
+        "idEletronic": 1,
+        "amount": 3,
+        "id": 1,
+        "eletronic": {
+          "name": "Smart TV",
+          "description": "60 polegadas, 4k",
+          "brand": "Samsung",
+          "price": 1000,
+          "amount": 20,
+          "id": 1,
+          "image": "https://picsum.photos/200"
+        }
+      },
+      "id": 20
+    }
+  ]
+}

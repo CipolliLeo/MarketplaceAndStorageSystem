@@ -1,0 +1,96 @@
+<p-dialog
+  header="Finalizar pedido -> Valor Total: R$ {{ totalValue }}"
+  [(visible)]="displayMakeOrderModal"
+  [modal]="true"
+  [style]="{ width: '50vw' }"
+  [draggable]="false"
+  [resizable]="false"
+  (onHide)="closeModal()"
+>
+  <div class="dialog-content">
+    <div class="left-column">
+      <h3>Informações pessoais</h3>
+      <div class="field">
+        <label class="block" for="name">Nome</label>
+        <input type="text" pInputText disabled [(ngModel)]="name" />
+      </div>
+      <form [formGroup]="orderForm" class="order-form">
+        <div class="field">
+          <label class="block" for="description">Endereco</label>
+          <input type="text" pInputText formControlName="endereco" [readonly]="okPersonalInfo" />
+        </div>
+        <div class="field">
+          <label class="block">Complemento</label>
+          <input type="text" pInputText formControlName="complemento" [readonly]="okPersonalInfo" />
+        </div>
+        <div class="field-row">
+          <div>
+            <label class="block" for="price">Bairro</label>
+            <input type="text" pInputText formControlName="bairro" [readonly]="okPersonalInfo" />
+          </div>
+          <div>
+            <label class="block">Cidade</label>
+            <input type="text" pInputText formControlName="cidade" [readonly]="okPersonalInfo" />
+          </div>
+        </div>
+        <div class="field-row">
+          <div>
+            <label class="block" for="price">Estado</label>
+            <input type="text" pInputText formControlName="estado" [readonly]="okPersonalInfo" />
+          </div>
+          <div>
+            <label class="block">País</label>
+            <input type="text" pInputText formControlName="pais" [readonly]="okPersonalInfo" />
+          </div>
+        </div>
+      </form>
+      <div class="mt-2">
+        <p-button (click)="nextStep()" label="Próximo passo" [rounded]="true" [disabled]="orderForm.invalid"></p-button>
+      </div>
+    </div>
+    <div class="right-column" *ngIf="okPersonalInfo">
+      <h3>Dados de Pagamento</h3>
+      <div class="field">
+        <img
+          src="https://www.pinclipart.com/picdir/big/567-5679765_credit-card-vector-png-clipart.png"
+          alt=""
+          height="200"
+          width="300"
+        />
+      </div>
+      <form [formGroup]="cardForm" class="order-form">
+        <div class="field">
+          <label class="block" for="description">Numero do Cartão</label>
+          <p-inputMask
+            mask="9999-9999-9999-9999"
+            formControlName="cardNumber"
+            placeholder="1234-5678-9012-3456"
+          ></p-inputMask>
+        </div>
+        <div class="field">
+          <label class="block" for="description">Nome impresso no cartão</label>
+          <input type="text" pInputText formControlName="cardName" />
+        </div>
+        <div class="field">
+          <label class="block">Data de Validade</label>
+          <p-inputMask mask="99/9999" formControlName="cardValid" placeholder="MM/YYYY"></p-inputMask>
+        </div>
+        <div class="field">
+          <label class="block">CVV</label>
+          <p-inputMask mask="999" formControlName="cardCVV" placeholder="123"></p-inputMask>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <ng-template pTemplate="footer">
+    <p-button (click)="closeModal()" label="Cancelar" [rounded]="true" severity="warning"></p-button>
+    <p-button
+      (click)="makeOrder()"
+      label="Realizar Pedido"
+      [rounded]="true"
+      severity="success"
+      [disabled]="cardForm.invalid"
+    ></p-button>
+  </ng-template>
+</p-dialog>

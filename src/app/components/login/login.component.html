@@ -1,0 +1,39 @@
+<h1>Marketplace de Eletrônicos</h1>
+<form [formGroup]="loginForm">
+    <p-card header="Login" [style]="{ 
+        border: '2px solid black',  
+        borderRadius: '15px',  
+        width: '450px',   
+        color: 'black' 
+    }" class="login-card">
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="text" pInputText formControlName="email" class="w-full" name="email" placeholder="Digite seu Email">
+            <small *ngIf="email.invalid && (email.dirty || email.touched)" class="block p-error">
+                <div *ngIf="email.errors?.['required']">Email é necessário</div>
+                <div *ngIf="email.errors?.['email']">Email deve ser válido</div>
+            </small>
+        </div>
+        <div class="field">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              pInputText
+              formControlName="password"
+              class="w-full"
+              name="password"
+              placeholder="Digite sua senha"
+            />
+            <small
+              *ngIf="password.invalid && (password.dirty || password.touched)"
+              class="block p-error"
+            >
+              <div *ngIf="password.errors?.['required']">Password is required.</div>
+            </small>
+          </div>
+        <p-button label="Entrar" styleClass="w-full" [disabled]="loginForm.invalid" (click)="loginUser()"></p-button>
+        <div class="mt-2">
+            Não tem cadastro? <a routerLink="/register">Registrar</a>
+        </div>
+    </p-card>
+</form>

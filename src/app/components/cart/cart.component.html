@@ -1,0 +1,71 @@
+<div class="flex" *ngIf="hiddenPage">
+  <h2>Carrinho de Compras</h2>
+</div>
+<p-table
+  [value]="carts"
+  [paginator]="true"
+  [rows]="10"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [breakpoint]="'960px'"
+  [autoLayout]="true"
+  *ngIf="hiddenPage"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 100px">Imagem</th>
+      <th style="width: 100px">Nome</th>
+      <th style="width: 500px">Descrição</th>
+      <th style="width: 100px">Marca</th>
+      <th style="width: 100px">Preço</th>
+      <th style="width: 100px">Quantidade</th>
+      <th style="width: 150px"></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-cart>
+    <tr>
+      <td><img src="{{ cart.eletronic.image }}" width="30px" /></td>
+      <td>{{ cart.eletronic.name }}</td>
+      <td>{{ cart.eletronic.description }}</td>
+      <td>{{ cart.eletronic.brand }}</td>
+      <td>{{ cart.eletronic.price | currency : 'BRL' }}</td>
+      <td>
+        <p-inputNumber
+          [(ngModel)]="cart.amount"
+          styleClass="mt-3"
+          [showButtons]="true"
+          buttonLayout="horizontal"
+          inputId="horizontal"
+          spinnerMode="horizontal"
+          [step]="1"
+          [min]="1"
+          decrementButtonClass="p-button-danger"
+          incrementButtonClass="p-button-success"
+          incrementButtonIcon="pi pi-plus"
+          decrementButtonIcon="pi pi-minus"
+        ></p-inputNumber>
+      </td>
+      <td>
+        <button
+          pButton
+          icon="pi pi-trash"
+          class="p-button-rounded p-button-warning"
+          (click)="deleteFromCart(cart)"
+        ></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<div class="flex mt-5" *ngIf="hiddenPage">
+  <p-button label="Finalizar Pedido" (click)="showOrderModal()" [rounded]="true"></p-button>
+</div>
+
+<div class="flex" *ngIf="!hiddenPage">
+  <h1>Parece que você ainda não adicionou nenhum produto ao carrinho.</h1>
+</div>
+
+<app-cart-order [displayMakeOrderModal]="displayMakeOrderModal" (clickClose)="hideMakeOrderModal($event)">
+</app-cart-order>
+
+<p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+<p-toast position="bottom-right"></p-toast>

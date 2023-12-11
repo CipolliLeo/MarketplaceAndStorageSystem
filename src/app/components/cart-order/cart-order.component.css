@@ -1,0 +1,17 @@
+.dialog-content {
+  display: flex;
+}
+
+.left-column,
+.right-column {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.left-column {
+  order: 1; /* Change the order to 2 if you want the credit card form on the left */
+}
+
+.right-column {
+  order: 2; /* Change the order to 1 if you want the credit card form on the left */
+}

@@ -1,0 +1,62 @@
+<div class="flex">
+  <h2>Estoque de Eletrônicos</h2>
+  <p-button label="Adicionar Eletrônico" (click)="showAddModal()" [rounded]="true"></p-button>
+</div>
+<p-table
+  [value]="eletronics"
+  [paginator]="true"
+  [rows]="8"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [breakpoint]="'960px'"
+  [autoLayout]="true"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 100px">Imagem</th>
+      <th style="width: 100px">Nome</th>
+      <th style="width: 700px">Descrição</th>
+      <th style="width: 100px">Marca</th>
+      <th style="width: 100px">Preço</th>
+      <th style="width: 100px">Quantidade</th>
+      <th style="width: 150px"></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-eletronic>
+    <tr>
+      <td><img src="{{ eletronic.image }}" width="30px" /></td>
+      <td>{{ eletronic.name }}</td>
+      <td>{{ eletronic.description }}</td>
+      <td>{{ eletronic.brand }}</td>
+      <td>{{ eletronic.price | currency : 'BRL' }}</td>
+      <td>{{ eletronic.amount }}</td>
+      <td>
+        <button
+          pButton
+          icon="pi pi-pencil"
+          class="p-button-rounded p-button-success mr-2"
+          (click)="showEditModal(eletronic)"
+        ></button>
+        <button
+          pButton
+          icon="pi pi-trash"
+          class="p-button-rounded p-button-warning"
+          (click)="deleteEletronic(eletronic)"
+        ></button>
+      </td>
+    </tr>
+  </ng-template>
+  <!-- <ng-template pTemplate="summary">
+        <div class="flex align-items-center justify-content-between">
+            In total there are {{eletronics ? eletronics.length : 0 }} eletronics.
+        </div>
+    </ng-template> -->
+</p-table>
+
+<app-add-edit-eletronic
+  [displayAddEditModal]="displayAddEditModal"
+  (clickClose)="hideAddModal($event)"
+  [selectedEletronic]="selectedEletronic"
+></app-add-edit-eletronic>
+
+<p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+<p-toast position="bottom-right"></p-toast>

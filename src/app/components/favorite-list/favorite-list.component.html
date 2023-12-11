@@ -1,0 +1,48 @@
+<div class="flex justify-content-between">
+  <h2>Lista de Favoritos</h2>
+</div>
+<p-table
+  [value]="favorites"
+  [paginator]="true"
+  [rows]="8"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [breakpoint]="'960px'"
+  [autoLayout]="true"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 100px">Imagem</th>
+      <th style="width: 100px">Nome</th>
+      <th style="width: 700px">Descrição</th>
+      <th style="width: 100px">Marca</th>
+      <th style="width: 100px">Preço</th>
+      <th style="width: 150px"></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-favorite>
+    <tr>
+      <td><img src="{{ favorite.eletronic.image }}" width="30px" /></td>
+      <td>{{ favorite.eletronic.name }}</td>
+      <td>{{ favorite.eletronic.description }}</td>
+      <td>{{ favorite.eletronic.brand }}</td>
+      <td>{{ favorite.eletronic.price | currency : 'BRL' }}</td>
+      <td>
+        <button
+          pButton
+          class="p-button-rounded p-button-success mr-2"
+          icon="pi pi-shopping-cart"
+          (click)="addCart(favorite.eletronic)"
+        ></button>
+        <button
+          pButton
+          icon="pi pi-trash"
+          class="p-button-rounded p-button-warning"
+          (click)="removeFavorite(favorite)"
+        ></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+<p-toast position="bottom-right"></p-toast>

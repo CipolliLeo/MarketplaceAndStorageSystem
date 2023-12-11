@@ -1,0 +1,8 @@
+.flex {
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: flex-end;
+  justify-content: space-between;
+}
